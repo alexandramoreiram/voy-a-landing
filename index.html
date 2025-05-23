@@ -2,48 +2,155 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Voy-a | Save Travel Ideas</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voy-a – Save Travel Ideas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #fce8e6 0%, #f4e2ff 50%, #fff7e1 100%);
+      padding: 40px;
+      color: #1c1c1c;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+    }
+
+    .chrome-btn {
+      background-color: #1c1c1c;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .chrome-btn:hover {
+      background-color: #333;
+    }
+
+    .chrome-btn img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .demo {
+      margin-top: 50px;
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      display: inline-block;
+      text-align: left;
+    }
+
+    .demo h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .demo p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .demo .place {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 12px;
+    }
+
+    .demo .place img {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .map {
+      margin-top: 30px;
+    }
+
+    .map img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header class="hero">
-    <h1><span class="italic">Voy-a</span> helps you</h1>
-    <h2>Save Travel Ideas</h2>
+  <div class="container">
+    <h1><span class="italic">Voy-a</span> <br> Save Travel Ideas</h1>
     <p>Easily collect places and inspiration from social media posts.</p>
-    <button class="cta">➕ Add to Chrome</button>
-  </header>
+    <button class="chrome-btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Chrome_icon_2022.svg/512px-Chrome_icon_2022.svg.png" alt="Chrome logo" />
+      Add to Chrome
+    </button>
 
-  <section class="trip-planner">
-    <h3>Rome Trip</h3>
-    <p>2 saved posts</p>
-    <div class="post-card">
-      <img src="https://via.placeholder.com/50" alt="Salvaje Roma" />
-      <div>
-        <strong>Salvaje Roma</strong><br />
-        <span>Restaurant</span>
+    <div class="demo">
+      <h2>Rome Trip</h2>
+      <p>2 saved posts</p>
+      <div class="place">
+        <img src="https://images.unsplash.com/photo-1520201163981-8ebd5bda06a0?w=80&q=80" alt="Salvaje Roma" />
+        <div>
+          <strong>Salvaje Roma</strong><br />
+          <span>Restaurant</span>
+        </div>
+      </div>
+      <div class="place">
+        <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?w=80&q=80" alt="Armando Al Pantheon" />
+        <div>
+          <strong>Armando Al Pantheon</strong><br />
+          <span>TikTok</span>
+        </div>
       </div>
     </div>
-    <div class="post-card">
-      <img src="https://via.placeholder.com/50" alt="Pantheon TikTok" />
-      <div>
-        <strong>Armando Al Pantheon</strong><br />
-        <span>TikTok</span>
-      </div>
+
+    <div class="map">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/OpenStreetMap_map_of_Rome.png" alt="Map of Rome" />
     </div>
-  </section>
-
-  <section class="map">
-    <h4>📍 Map of Your Trip</h4>
-    <div id="map-placeholder">🗺️ [Map integration placeholder]</div>
-  </section>
-
-  <footer>
-    <p>Plan your next adventure with <em>Voy-a</em></p>
-  </footer>
-
-  <script src="script.js"></script>
+  </div>
 </body>
 </html>
+
 
 
