@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voy-a – Your Travel Itinerary Has Never Looked Better</title>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Urbanist', sans-serif;
+      background-color: #fdfdfd;
+      color: #222;
+    }
+
+    header {
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .logo {
+      font-size: 1.7rem;
+      font-weight: 800;
+      font-style: italic;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #555;
+      font-weight: 600;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: #111;
+    }
+
+    .hero p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    .cta {
+      margin-top: 2rem;
+    }
+
+    .cta input {
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      width: 250px;
+      max-width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .cta button {
+      padding: 0.8rem 1.2rem;
+      background-color: #000;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .cta button:hover {
+      background-color: #444;
+    }
+
+    .features {
+      padding: 4rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      background-color: #fafafa;
+    }
+
+    .feature {
+      padding: 1.5rem;
+      border: 1px solid #e0e0e0;
+      border-radius: 16px;
+      background: #fff;
+    }
+
+    .feature h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Voy-a</div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#download">Get Extension</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>You Save, We Plan.</h1>
+    <p>Organize your saves from Instagram, TikTok, and Pinterest — all in one place.</p>
+    <div class="cta">
+      <input type="text" placeholder="e.g. I’m going to Rome June 25" />
+      <br />
+      <button>Start Planning</button>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature">
+      <h3>🌍 Map Your Saved Spots</h3>
+      <p>See all your favorite places geolocated — from trendy cafes to hidden boutiques.</p>
+    </div>
+    <div class="feature">
+      <h3>📥 Works with Instagram & TikTok</h3>
+      <p>Auto-extract post URLs and location tags with our Chrome extension.</p>
+    </div>
+    <div class="feature">
+      <h3>👗 Outfit Boards from Pinterest</h3>
+      <p>Plan what to wear with curated inspiration boards for every city vibe.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Voy-a. All rights reserved.
+  </footer>
+</body>
+</html>
